@@ -1,0 +1,49 @@
+.cabecera{
+    background-image: url(../IMG/banner3.jpg);
+    width: 100%; 
+    height: 150px;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 0.2rem 0 0.2rem;
+}
+.menu__lista{
+    display: flex;    
+}
+.menu__item{
+    list-style: none;    
+}
+.menu__link{    
+    margin-right: 1rem;
+    text-decoration: none;
+    font-family: Orbiton, Times;
+    font-size: 1.2rem;
+    color:black solid;
+    font-weight: bold;
+}
+.foto-perfil{
+    margin-top: 1rem;
+    margin-left: 0.175rem;
+    margin-bottom: 1rem;
+    border-image: 1rem;
+    border-radius: 3px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 1.5);
+}
+.presentacion{
+    padding: 2.5rem;
+    text-align: center;
+}
+.presentacion__titulo{
+    font-family: Dancing Script,cursive;
+    color: black;
+    font-size: 2.8rem;
+    margin-bottom: 2.5rem;
+}
+.presentacion__personal{
+    font-family: Dancing Script,cursive;
+    color:#086A87;
+    font-size: 1.8rem;
+}
+.contenido__skills{
+    display:flex; 
+}
