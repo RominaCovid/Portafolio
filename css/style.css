@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 .cabecera{
     background-image: url(../IMG/banner3.jpg);
     width: 100%; 
@@ -6,20 +9,7 @@
     display: flex;
     justify-content: space-evenly;
     padding: 0 0.2rem 0 0.2rem;
-}
-.menu__lista{
-    display: flex;    
-}
-.menu__item{
-    list-style: none;    
-}
-.menu__link{    
-    margin-right: 1rem;
-    text-decoration: none;
-    font-family: Orbiton, Times;
-    font-size: 1.2rem;
-    color:black solid;
-    font-weight: bold;
+    position: fixed;
 }
 .foto-perfil{
     margin-top: 1rem;
@@ -29,21 +19,9 @@
     border-radius: 3px;
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 1.5);
 }
-.presentacion{
-    padding: 2.5rem;
-    text-align: center;
+body{
+    background-color: #f4f7fa;
 }
-.presentacion__titulo{
-    font-family: Dancing Script,cursive;
-    color: black;
-    font-size: 2.8rem;
-    margin-bottom: 2.5rem;
-}
-.presentacion__personal{
-    font-family: Dancing Script,cursive;
-    color:#086A87;
-    font-size: 1.8rem;
-}
-.contenido__skills{
-    display:flex; 
-}
+
+
+

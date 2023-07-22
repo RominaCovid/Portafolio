@@ -1,0 +1,18 @@
+.menu__lista{
+    display: flex;    
+}
+.menu__item{
+    list-style: none;    
+}
+.menu__link{    
+    margin-right: 1rem;
+    text-decoration: none;
+    font-family: Orbiton, Times;
+    font-size: 1.2rem;
+    color:black solid;
+    font-weight: bold;
+}
+.menu__link:hover{
+	background-color: #5d58d7;
+	color:#f4f7fa;
+}
