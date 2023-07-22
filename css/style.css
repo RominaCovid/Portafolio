@@ -2,7 +2,7 @@ html{
     scroll-behavior: smooth;
 }
 .cabecera{
-    background-image: url(../IMG/banner3.jpg);
+    background-image: url(../img/banner3.jpg);
     width: 100%; 
     height: 150px;
     align-items: center;
