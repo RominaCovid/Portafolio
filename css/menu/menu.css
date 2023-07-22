@@ -1,8 +1,9 @@
 .menu__lista{
-    display: flex;    
+    display: flex;
+            
 }
 .menu__item{
-    list-style: none;    
+    list-style: none;     
 }
 .menu__link{    
     margin-right: 1rem;

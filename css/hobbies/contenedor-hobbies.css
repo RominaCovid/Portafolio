@@ -1,9 +1,7 @@
-.contenedor__skills{
+.contenedor__hobbies{
     display: flex; 
     flex-wrap: wrap;
-    margin-top:1.5rem; 
+    margin-top: 1.5rem;  
     background-color: #ecf0f4fe;  
     border:double red;   
 }
-
-

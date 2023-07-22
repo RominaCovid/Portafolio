@@ -7,31 +7,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Orbitron&family=Satisfy&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" type="text/css" href="./css/contacto/contacto.css">
+    <link rel="stylesheet" type="text/css" href="CSS/reset.css">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">    
     <link rel="stylesheet" type="text/css" href="./css/menu/menu.css">
-    <link rel="stylesheet" type="text/css" href="./css/persona/persona.css">
+    <link rel="stylesheet" type="text/css"  href="./css/foto-perfil.css">
+    <link rel="stylesheet" type="text/css" href="./css/img-banner.css">
+    <link rel="stylesheet" type="text/css" href="./css/contenedor-menu/contenedor__menu.css">
+    <link rel="stylesheet" type="text/css" href="./css/persona/contenedor-persona.css">
+    <link rel="stylesheet" type="text/css" href="./css/persona/titulo-presentacion.css">
+    <link rel="stylesheet" type="text/css" href="./css/persona/presentacion-personal.css">
     <link rel="stylesheet" type="text/css" href="./css/skills/contenedor-skills.css">
     <link rel="stylesheet" type="text/css" href="./css/skills/titulo-skills.css">
     <link rel="stylesheet" type="text/css" href="./css/skills/tarjeta-skills.css">
-    <link rel="stylesheet"  type="text/css" href="./css/skills/img-tarjeta-skills.css">
+    <link rel="stylesheet"  type="text/css" href="./css/img-tarjeta.css">
     <link rel="stylesheet"  type="text/css" href="./css/skills/texto-skills.css">
+    <link rel="stylesheet"  type="text/css" href="./css/hobbies/contenedor-hobbies.css">
+    <link rel="stylesheet"  type="text/css" href="./css/hobbies/titulo-hobbies.css">
+    <link rel="stylesheet"  type="text/css" href="./css/hobbies/tarjetas-hobbies.css">
+    <link rel="stylesheet"  type="text/css" href="./css/hobbies/texto-hobbies.css">
+    <link rel="stylesheet"  type="text/css" href="./css/formacion/contenedor-formacion.css">
+    <link rel="stylesheet" type="text/css" href="./css/contacto/contacto.css">
+
 </head>
 <body>
-    <header class="cabecera">
-        <img class="foto-perfil" src="./IMG/foto-perfil.jpg" alt="foto-perfil"/>
+    <header class="contenedor__menu">        
         <nav class="menu">
             <ul class="menu__lista">
                 <li class="menu__item"><a class="menu__link" href="#presentacion">Sobre mí</a></li>
                 <li class="menu__item"><a class="menu__link" href="#skills">Skills</a></li>
-                <li class="menu__item"><a class="menu__link" href="#Hobbies">Hobbies</a></li>
-                <li class="menu__item"><a class="menu__link" href="#Formación">Formación</a></li>
-                <li class="menu__item"><a class="menu__link" href="#Contacto">Contacto</a></li>
+                <li class="menu__item"><a class="menu__link" href="#hobbies">Hobbies</a></li>
+                <li class="menu__item"><a class="menu__link" href="#formación">Formación</a></li>
+                <li class="menu__item"><a class="menu__link" href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
-    <section class="presentacion" id="presentacion">
+
+    <section class="contenedor__presentacion" id="presentacion">
+        <img class="foto__perfil" src="./img/foto-perfil.jpg" alt="foto-perfil"/>
         <h2 class="presentacion__titulo">¿Quién soy?</h2>
         <p class="presentacion__personal">
             Hola, soy Romina Retamoso vivo en Argentina y quiero que me conozcas.<br/>
@@ -71,38 +83,40 @@
             </div>                      
         </div>                             
     </section>
-    <section class="contenedor__skills" id="Hobbies"> 
-        <div class="titulo__skills">
+
+    <section class="contenedor__hobbies" id="hobbies"> 
+        <div class="titulo__hobbies">
             <h2>HOBBIES</h2>
         </div>       
-        <div class="tarjeta__skills">
+        <div class="tarjeta__hobbies">
             <div>
-                <img class="imagen__tarjeta" src="./img/c.png"></img>
-                <p class="texto__skills">C++</p> 
+                <img class="imagen__tarjeta" src="./img/caminar.png"></img>
+                <p class="texto__hobbies">Caminar</p> 
             </div>                       
         </div>
-        <div class="tarjeta__skills">
+        <div class="tarjeta__hobbies">
             <div>
-                <img class="imagen__tarjeta" src="./img/js1.png"></img>
-                <p class="texto__skills">JavaScript</p> 
+                <img class="imagen__tarjeta" src="./img/libro.png"></img>
+                <p class="texto__hobbies">Leer</p> 
             </div>                      
         </div>
-        <div class="tarjeta__skills">
+        <div class="tarjeta__hobbies">
             <div>
-                <img class="imagen__tarjeta" src="./img/css2.png"></img>   
-                <p class="texto__skills">CSS</p> 
+                <img class="imagen__tarjeta" src="./img/ver-la-pelicula.png"></img>   
+                <p class="texto__hobbies">Ver películas</p> 
             </div>                    
         </div>        
-        <div class="tarjeta__skills">
+        <div class="tarjeta__hobbies">
             <div>
-                <img class="imagen__tarjeta" src="./img/html3.png"></img>   
-                <p class="texto__skills">HTML</p>
+                <img class="imagen__tarjeta" src="./img/escuchando.png"></img>   
+                <p class="texto__hobbies">Oír música</p>
             </div>                      
         </div>  
 
                              
     </section>
-    <section class="contenedor__skills" id="Formación"> 
+
+    <section class="contenedor__formacion" id="formación"> 
         <div class="titulo__skills">
             <h2>FORMACIÓN</h2>
         </div>       
@@ -118,21 +132,7 @@
                 <p class="texto__skills">JavaScript</p> 
             </div>                      
         </div>
-        <div class="tarjeta__skills">
-            <div>
-                <img class="imagen__tarjeta" src="./img/css2.png"></img>   
-                <p class="texto__skills">CSS</p> 
-            </div>                    
-        </div>        
-        <div class="tarjeta__skills">
-            <div>
-                <img class="imagen__tarjeta" src="./img/html3.png"></img>   
-                <p class="texto__skills">HTML</p>
-            </div>                      
-        </div>  
-
-
-                             
+                                   
     </section>
     <section  id="Contacto"> 
         <div>

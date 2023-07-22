@@ -1,0 +1,8 @@
+.foto__perfil{
+    margin-top: 1rem;
+    margin-left: 0.175rem;
+    margin-bottom: 1rem;
+    border-image: 1rem;
+    border-radius: 100%;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 1.5);
+}
