@@ -1,7 +1,8 @@
 .contenedor__formacion{
     display: flex; 
     flex-wrap: wrap;
-    margin-top: 1.5rem; 
-    background-color: #ecf0f4fe;   
-    border:double red;   
+    margin-top: 0.1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 4rem;
+    background-color: #ecf0f4fe;     
 }

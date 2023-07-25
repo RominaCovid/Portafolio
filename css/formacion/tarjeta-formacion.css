@@ -1,9 +1,9 @@
-.tarjeta__formacion{  
-    justify-content:space-evenly;  
+.tarjeta__formacion{   
     background-color: white;   
-    margin:4.3rem;
-    width:185px;
-    height: 200px;   
-    border: double rgb(22, 76, 146);
+    margin-left: 13%;
+    margin-top:2.5rem;
+    width:230px;
+    height: 210px;   
+    border: solid rgb(22, 76, 146);
     border-radius: 5%;
 }
