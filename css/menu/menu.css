@@ -1,6 +1,5 @@
 .menu__lista{
-    display: flex;
-            
+    display: flex;            
 }
 .menu__item{
     list-style: none;     
