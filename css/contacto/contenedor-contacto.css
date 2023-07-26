@@ -1,6 +1,11 @@
 .contenedor__contacto{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 30%;
+    margin-right:50%;
+    width: 460px;
+    height: 550px;
     margin-top: 0.1rem;
     background: #F3F3F3;
     border: double red ;  

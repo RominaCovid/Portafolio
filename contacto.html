@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="./css/contacto/contenedor-contacto.css"> 
+    <title>Formulario de Contacto</title>
     <link rel="stylesheet" href="./css/menu/contenedor__menu.css">   
     <link rel="stylesheet" type="text/css" href="./css/menu/menu.css"> 
+    <link rel="stylesheet" type="text/css" href="./css/contacto/contenedor-contacto.css">
+    <link rel="stylesheet" type="text/css" href="./css/contacto/titulo-contacto.css">
+    <link rel="stylesheet" type="text/css" href="./css/contacto/formulario-contacto.css">  
+
+    
 </head>
 <header class="contenedor__menu">               
     <nav class="menu">
@@ -17,27 +21,27 @@
 </header>
 <body>
     <section class="contenedor__contacto"  id="contacto"> 
-        <div class="titulo__formacion">
+        <div class="titulo__contacto">
             <h2>CONTACTO</h2>
         </div> 
-        <form action="">
-            <label for="">Email</label>
+        <form class="formulario"  action="" method="post" autocomplete="off">
+            <label for="email">Email</label>
             <br>
-            <input type="email">
+            <input type="email" id="email">
             <br>
-            <label for="">Nombre y Apellido</label>
+            <label for="nombre">Nombre y Apellido</label>
             <br>
-            <input type="text">
+            <input type="text" id="nombre">
             <br>
-            <label for="">Asunto</label>
+            <label for="asunto">Asunto</label>
             <br>
-            <input type="text">
+            <input type="text" id="asunto">
             <br>
-            <label for="">Mensaje</label>
+            <label for="mensaje">Mensaje</label>
             <br>
-            <input type="text">
+            <input for="mensaje" type="text">
             <br>
-            <input type="button" value="Enviar">
+            <button type="submit">Enviar</button>
             
         </form> 
         <div>
