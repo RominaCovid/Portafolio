@@ -1,0 +1,10 @@
+.contenedor__experiencia{
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 0.1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 4rem;
+    background-color: #ecf0f4fe;
+    border: double red ;   
+}
