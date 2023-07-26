@@ -1,6 +1,7 @@
 .contenedor__contacto{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.1rem;
     background: #F3F3F3;
-    border: double red ;
- 
-    
+    border: double red ;  
 }

@@ -1,4 +1,24 @@
 .link__experiencia{
-   margin-left: 45%;
+   margin-left: 39%;
    margin-top: 2em;
+   outline: none;
+   text-decoration: none;
+   font-family: Dancing Script,cursive;
+   font-size: 1.5rem;  
 }
+.link__experiencia:link {
+   color: blue;
+ }
+ 
+ .link__experiencia:visited {
+   color: purple;
+ }
+ 
+ .link__experiencia:focus,
+ .link__experiencia:hover {
+   border-bottom: 1px solid;
+ }
+ 
+ .link__experiencia:active {
+   color: red;
+ }
