@@ -1,5 +1,5 @@
 .contenedor__menu{
-    background-image:url("/img/banner3.png");
+    background-image:url(/img/banner3.png);
     display: flex;
     align-items: center;
     flex-direction:row-reverse;  
