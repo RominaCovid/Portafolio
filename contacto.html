@@ -25,28 +25,31 @@
             <h2>CONTACTO</h2>
         </div> 
         <form class="formulario"  action="" method="post" autocomplete="off">
-            <label for="email">Email</label>
-            <br>
-            <input type="email" id="email">
-            <br>
-            <label for="nombre">Nombre y Apellido</label>
-            <br>
-            <input type="text" id="nombre">
-            <br>
-            <label for="asunto">Asunto</label>
-            <br>
-            <input type="text" id="asunto">
-            <br>
-            <label for="mensaje">Mensaje</label>
-            <br>
-            <input for="mensaje" type="text">
-            <br>
-            <button type="submit">Enviar</button>
-            
-        </form> 
-        <div>
-            
-        </div>                             
+            <div>
+                <label for="nombre">Nombre y Apellido</label>          
+                <input type="text" id="nombre" required >
+                
+             </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email" required data-tipo="email">
+                <span class="message-error">Este campo no es valido</span>
+                
+            </div>        
+            <div>
+                <label for="asunto">Asunto</label>           
+                <input type="text" id="asunto" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,10}$">
+                
+            </div>
+            <div>
+                <input for="mensaje" type="text" placeholder="Ingrese aquí su mensaje..." required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,100}$">
+                
+            </div>
+            <div>
+                <button type="submit">Enviar</button>
+            </div>  
+        </form>                              
     </section>
+    <script src="./js/validar.js" type="module"></script>
 </body>
 </html>
