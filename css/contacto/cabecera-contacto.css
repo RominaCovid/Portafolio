@@ -1,0 +1,5 @@
+.cabecera__contacto{
+    display: flex;
+    justify-content: space-evenly;
+    bottom: 5rem;
+}

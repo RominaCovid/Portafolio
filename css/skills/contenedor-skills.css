@@ -1,6 +1,7 @@
 .contenedor__skills{
     display: flex; 
     flex-wrap: wrap;
+    justify-content: space-around;
     background-color: #ecf0f4fe;    
 }
 

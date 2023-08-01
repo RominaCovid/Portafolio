@@ -4,52 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Contacto</title>
-    <link rel="stylesheet" href="./css/menu/contenedor__menu.css">   
-    <link rel="stylesheet" type="text/css" href="./css/menu/menu.css"> 
+    <link rel="stylesheet" type="text/css" href="css/banner.css">  
+    <link rel="stylesheet" type="text/css" href="./css/contacto/menu-contacto.css"> 
+    <link rel="stylesheet" type="text/css"  href="./css/foto-perfil.css">
     <link rel="stylesheet" type="text/css" href="./css/contacto/contenedor-contacto.css">
     <link rel="stylesheet" type="text/css" href="./css/contacto/titulo-contacto.css">
-    <link rel="stylesheet" type="text/css" href="./css/contacto/formulario-contacto.css">  
-
-    
+    <link rel="stylesheet" type="text/css" href="./css/contacto/formulario-contacto.css">
+    <link rel="stylesheet" type="text/css" href="./css/contacto/mensaje.css">
+    <link rel="stylesheet" type="text/css" href="./css/rodapie/rodapie-titulo.css">     
 </head>
-<header class="contenedor__menu">               
-    <nav class="menu">
-        <ul class="menu__lista">
-            <li class="menu__item"><a class="menu__link" href="index.html">Inicio</a></li>
-        </ul>
-    </nav>
-</header>
 <body>
+    <header class="cabecera__contacto" style="background-image: url(./img/banner3.png); width: 100%; height: 90px;">         
+        <a class="inicio" href="index.html">Inicio</a>           
+    </header>
     <section class="contenedor__contacto"  id="contacto"> 
         <div class="titulo__contacto">
             <h2>CONTACTO</h2>
         </div> 
-        <form class="formulario"  action="" method="post" autocomplete="off">
-            <div>
+        <form action="" method="post" autocomplete="off">
+            <div class="dato_form">
                 <label for="nombre">Nombre y Apellido</label>          
                 <input type="text" id="nombre" required >
                 
              </div>
-            <div>
+            <div class="dato_form">
                 <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Email" required data-tipo="email">
-                <span class="message-error">Este campo no es valido</span>
-                
+                <input type="email" id="email" placeholder="Email" required data-tipo="email">              
             </div>        
-            <div>
+            <div class="dato_form">
                 <label for="asunto">Asunto</label>           
                 <input type="text" id="asunto" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,10}$">
                 
             </div>
-            <div>
-                <input for="mensaje" type="text" placeholder="Ingrese aquí su mensaje..." required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,100}$">
+            <div class="dato_form">
+                <label for="mensaje">Mensaje</label> 
+                <input class="mensaje" for="mensaje" type="text" placeholder="Ingrese aquí su mensaje..." required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,100}$">
                 
             </div>
             <div>
-                <button type="submit">Enviar</button>
+                <button class="btn" type="submit">Enviar</button>
             </div>  
-        </form>                              
+        </form> 
+        
+        <h3 class="rodapie__titulo">Porfolio-Retamoso Romina</h3>
     </section>
-    <script src="./js/validar.js" type="module"></script>
+    <script src="./js/validar.js" type="module"></script>    
 </body>
 </html>

@@ -1,0 +1,16 @@
+.inicio{   
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 2rem; 
+    margin-right: 5rem;
+    text-decoration: none;
+    font-family: Orbiton, Times;
+    font-size: 1.40rem;
+    color:black;
+    font-weight: bold;
+    padding-bottom: .1rem;
+}
+.inicio:hover{
+    text-decoration:underline;
+    color:#2d3aaa;
+}

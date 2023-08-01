@@ -1,8 +1,15 @@
-.titulo__formacion{ 
-    margin-left: 35%;
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    padding-bottom: 0.2px;
+    background-color: #ecf0f4fe; 
+}
+.titulo__formacion{    
     padding-top: 2.3rem;
-    padding-bottom: 0.1rem; 
+    padding-bottom: 0.08rem; 
     font-family: Dancing Script,cursive;
     color: black;
-    font-size: 2.8rem;     
+    font-size: 2.8rem;   
 }

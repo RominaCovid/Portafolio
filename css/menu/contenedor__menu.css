@@ -1,10 +1,9 @@
 .contenedor__menu{
-    background-image:url(/img/banner3.png);
     display: flex;
     align-items: center;
     flex-direction:row-reverse;  
     height: 150px;
     margin-top: 0.5rem; 
-    margin-bottom: 1rem;  
+    margin-bottom: 2.5rem;  
     padding: 0 0.1rem 0 0.1rem; 
 }
