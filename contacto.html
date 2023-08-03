@@ -21,25 +21,27 @@
         <div class="titulo__contacto">
             <h2>CONTACTO</h2>
         </div> 
-        <form action="" method="post" autocomplete="off">
-            <div class="dato_form">
+        <form action="" name="formulario" id="formulario" method="post" autocomplete="off">
+            <div class="dato_form" id="nombre">
                 <label for="nombre">Nombre y Apellido</label>          
-                <input type="text" id="nombre" required >
-                
-             </div>
-            <div class="dato_form">
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Email" required data-tipo="email">              
-            </div>        
-            <div class="dato_form">
-                <label for="asunto">Asunto</label>           
-                <input type="text" id="asunto" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,10}$">
-                
+                <input type="text" id="nombre" name="nombre" required data-tipo="nombre" >
+                <p class="formulario__input-error">Solo puede contener letras minúsculas y mayúsculas, con una longitud de 20 caracteres .</p> 
             </div>
-            <div class="dato_form">
+            <div class="dato_form" id="email">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="romi@gmail.com" required data-tipo="email">              
+                <p class="formulario__input-error">Solo número y letras.</p>
+            </div>        
+            <div class="dato_form" id="asunto">
+                <label for="asunto">Asunto</label>           
+                <input type="text" id="asunto" name="asunto"  data-tipo="asunto">
+                <p class="formulario__input-error">Solo puede contener letras minúsculas y mayúsculas,con una longitud de 10 caracteres.</p> 
+               
+            </div>
+            <div class="dato_form" id="mensaje">
                 <label for="mensaje">Mensaje</label> 
-                <input class="mensaje" for="mensaje" type="text" placeholder="Ingrese aquí su mensaje..." required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,100}$">
-                
+                <input class="mensaje" name="mensaje" id="mensaje" type="text" data-tipo="mensaje"  placeholder="Ingrese aquí su mensaje..." required>                
+                <p class="formulario__input-error">Solo puede contener letras minúsculas y mayúsculas,con una longitud de 100 caracteres.</p> 
             </div>
             <div>
                 <button class="btn" type="submit">Enviar</button>
@@ -47,7 +49,8 @@
         </form> 
         
         <h3 class="rodapie__titulo">Porfolio-Retamoso Romina</h3>
+        <script src="./js/validacion.js"></script>  
     </section>
-    <script src="./js/validar.js" type="module"></script>    
+      
 </body>
 </html>

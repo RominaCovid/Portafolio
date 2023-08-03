@@ -1,10 +1,10 @@
 .contenedor__contacto{
     width:500px;
-    height: 500px;
+    height: 750px;
     position: absolute;
     top:70%;
     left: 50%;
-    margin-top: -250px;
+    margin-top: -375px;
     margin-left: -250px;
     background: #F3F3F3;
     border: double red ;  

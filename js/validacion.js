@@ -1,45 +1,49 @@
-export function valida(input) { 
-    if (input.validity.valid) {
-      input.parentElement.classList.remove("input-container--invalid");
-      input.parentElement.querySelector(".input-message-error").innerHTML = "";
-    } else {
-      input.parentElement.classList.add("input-container--invalid");
-      input.parentElement.querySelector(".input-message-error").innerHTML =
-        mostrarMensajeDeError(tipoDeInput, input);
-    }
-  }
-  
-  const tipoDeErrores = [
-    "valueMissing",
-    "typeMismatch",
-    "patternMismatch",
-    "customError",
-  ];
-  
-  const mensajesDeError = {
-    nombre: {
-      valueMissing: "El campo nombre no puede estar vacío",
-     
-    },
-    email: {
-      valueMissing: "El campo correo no puede estar vacío",
-      typeMismatch: "El correo no es válido",
-    },
-    asunto: {
-      valueMissing: "El campo asunto no puede estar vacío",
-      patternMismatch:"Al menos 6 caracteres, máximo 10.",
-    },
-    mensaje: {
-        valueMissing: "El campo mensaje no puede estar vacío",
-        patternMismatch:"Al menos 6 caracteres, máximo 100.",
-    },   
-  };
-  function mostrarMensajeDeError(tipoDeInput, input) {
-    let mensaje = "";
-    tipoDeErrores.forEach((error) => {
-      if (input.validity[error]) {
-        mensaje = mensajesDeError[tipoDeInput][error];
-      }
-    });
-    return mensaje;
-  }
+const formulario=document.getElementById('formulario');
+const inputs=document.querySelectorAll('#formulario input');
+const expresiones={
+  nombre:/^[ a-zA-Z]{1,20}$/,
+  asunto:/^[ a-zA-Z]{1,10}$/,
+  mensaje:/^[ a-zA-Z0-9]{1,100}$/
+}
+const campos = {
+	nombre: false,
+  	asunto:false,
+  	mensaje:false
+}
+const validarFormulario = (e) => {
+	switch (e.target.name) {
+		case "nombre":
+			validarCampo(expresiones.nombre, e.target, 'nombre');
+		break;
+		case "asunto":
+			validarCampo(expresiones.asunto, e.target, 'asunto');
+		break;
+		case "mensaje":
+			validarCampo(expresiones.mensaje, e.target, 'mensaje');
+		break;
+	}
+}
+
+const validarCampo = (expresion, input, campo) => {
+	if(expresion.test(input.value)){
+		console.log(campo);
+		document.getElementById(`${campo}`).classList.remove('formulario__grupo-incorrecto');
+		document.getElementById(`${campo}`).classList.add('formulario__grupo-correcto');
+		document.querySelector(`#${campo} .formulario__input-error`).classList.remove('formulario__input-error-activo');
+		campos[campo] = true;
+	} else {
+		document.getElementById(`${campo}`).classList.add('formulario__grupo-incorrecto');
+		document.getElementById(`${campo}`).classList.remove('formulario__grupo-correcto');
+		document.querySelector(`#${campo} .formulario__input-error`).classList.add('formulario__input-error-activo');
+		campos[campo] = false;
+	}
+};
+
+inputs.forEach((input) => {
+	input.addEventListener('keyup', validarFormulario);
+	input.addEventListener('blur', validarFormulario);
+});
+
+formulario.addEventListener('submit', (e) => {	
+	formulario.reset();
+});
