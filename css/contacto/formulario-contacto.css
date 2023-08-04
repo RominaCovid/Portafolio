@@ -39,10 +39,14 @@ input:focus{
     border: 2px solid #000;
     background:#F3F3F3;
 }
-.input-message-error {
+.mensaje-exito{
     display: none;
-    color: red;
 }
-.input-message-correcto{
-    border-bottom: #1e84b8;
+.mensaje-exito-activo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Dancing Script,cursive;
+    color: black;
+    font-size: 0.8rem; 
 }

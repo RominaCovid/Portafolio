@@ -29,12 +29,12 @@
             </div>
             <div class="dato_form" id="email">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="romi@gmail.com" required data-tipo="email">              
-                <p class="formulario__input-error">Solo número y letras.</p>
+                <input type="email" id="email" name="email" placeholder="romi@gmail.com" required>              
+                <p class="formulario__input-error">Ejemplo pepe@gmail.com</p>
             </div>        
             <div class="dato_form" id="asunto">
                 <label for="asunto">Asunto</label>           
-                <input type="text" id="asunto" name="asunto"  data-tipo="asunto">
+                <input type="text" id="asunto" name="asunto">
                 <p class="formulario__input-error">Solo puede contener letras minúsculas y mayúsculas,con una longitud de 10 caracteres.</p> 
                
             </div>
@@ -44,8 +44,11 @@
                 <p class="formulario__input-error">Solo puede contener letras minúsculas y mayúsculas,con una longitud de 100 caracteres.</p> 
             </div>
             <div>
-                <button class="btn" type="submit">Enviar</button>
-            </div>  
+                <button class="btn" id="btn-enviar" type="submit" disabled>Enviar</button>
+                <p class="mensaje-exito" id="exito">Formulario enviado exitosamente!</p>          
+            </div> 
+           
+             
         </form> 
         
         <h3 class="rodapie__titulo">Porfolio-Retamoso Romina</h3>
