@@ -30,13 +30,16 @@
     display: block;
     width: 29rem;
     margin: 1em 0 0 1.5em;
+    border-color:#427abe ;
 }
 input{
     margin-top: 0.6em;
+    padding: 9px 0;
+    border: none;
 }
 
 input:focus{
-    border: 2px solid #000;
+   outline-color: #427abe;
     background:#F3F3F3;
 }
 .mensaje-exito{
