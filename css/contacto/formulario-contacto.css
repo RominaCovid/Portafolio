@@ -32,6 +32,7 @@
     margin: 1em 0 0 1.5em;
     border-color:#427abe ;
 }
+
 input{
     margin-top: 0.6em;
     padding: 9px 0;
@@ -52,4 +53,11 @@ input:focus{
     font-family: Dancing Script,cursive;
     color: black;
     font-size: 0.8rem; 
+}
+
+@media screen and (max-width:480px) {
+    .btn{
+        width:9rem;
+    }
+    
 }
