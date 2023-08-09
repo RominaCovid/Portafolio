@@ -16,3 +16,10 @@
 	background-color: #5d58d7;
 	color:#f4f7fa;
 }
+
+@media screen and (max-width:480px) {
+    .menu__lista{
+        display:none;
+    }
+    
+}

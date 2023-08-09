@@ -5,4 +5,10 @@
     padding-bottom: 1rem;
     text-align: center; 
 }
+@media screen and (max-width:480px) {
+    .contenedor__presentacion{
+        height: 190px;
+    }
+    
+}
 

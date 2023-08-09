@@ -4,3 +4,11 @@
     color:#086A87;
     font-size: 1.8rem;
 }
+
+@media screen and (max-width:480px) {
+    .presentacion__personal{
+        font-size: 0.6rem;
+        text-align: center;
+    }
+    
+}

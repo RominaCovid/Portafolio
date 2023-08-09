@@ -9,3 +9,9 @@
     border: solid rgb(22, 76, 146);
     border-radius: 5%;    
 }
+@media screen and (max-width:480px) {
+    .tarjeta__formacion{
+       margin-left: 25%;     
+    }
+    
+}
