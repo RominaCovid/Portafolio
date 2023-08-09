@@ -18,12 +18,8 @@
 }
 
 @media screen and (max-width:720px) {
-    .menu__lista{
-        display:flex;
-        justify-content:center;
-    }
-    .menu__link{
-        font-size: 0.8rem;
+       .menu__link{
+        font-size:0.1rem;
     }
     
 }
