@@ -18,6 +18,10 @@
 }
 
 @media screen and (max-width:720px) {
+    .menu__lista{
+        justify-content: column;
+        align-items: flex-end;
+    }
        .menu__link{
         font-size:0.1rem;
     }
