@@ -19,7 +19,11 @@
 
 @media screen and (max-width:720px) {
     .menu__lista{
-        display:none;
+        display:flex;
+        justify-content:center;
+    }
+    .menu__link{
+        font-size: 0.8rem;
     }
     
 }
