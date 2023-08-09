@@ -22,7 +22,7 @@
  .link__experiencia:active {
    color: red;
  }
- @media screen and (max-width:480px) {
+ @media screen and (max-width:720px) {
   .link__experiencia{
     margin-left: 19%;
     font-size: 1.2rem;

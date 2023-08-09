@@ -55,7 +55,7 @@ input:focus{
     font-size: 0.8rem; 
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:720px) {
     .btn{
         width:9rem;
     }

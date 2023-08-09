@@ -10,7 +10,7 @@
     border: double red ;  
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:720px) {
     .contenedor__contacto{
         width: 250px;
         height: 550px;
