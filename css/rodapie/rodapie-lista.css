@@ -5,10 +5,3 @@
     justify-content: space-around;
     padding-bottom: 2rem;
 }
-
-@media screen and (max-width:720px) {
-    .rodapie__lista{
-        justify-content: center;
-    }
-    
-}
