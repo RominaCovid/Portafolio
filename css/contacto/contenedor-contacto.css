@@ -1,11 +1,12 @@
 .contenedor__contacto{
     width:500px;
-    height: 670px;
+    height: 575px;
     position: absolute;
-    top:70%;
+    top:65%;
     left: 50%;
     margin-top: -335px;
     margin-left: -250px;
+    margin-bottom: 2rem;
     background: #F3F3F3;
     border: double red ;  
 }
@@ -13,8 +14,8 @@
 @media screen and (max-width:720px) {
     .contenedor__contacto{
         width: 250px;
-        height: 550px;
-        top: 55;
+        height: 600px;
+        top: 22rem;
         margin-left: -125px;
         margin-top: -295px;
     }
