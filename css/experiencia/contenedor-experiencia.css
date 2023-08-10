@@ -7,3 +7,11 @@
     padding-bottom: 4rem;
     background-color: #ecf0f4fe;  
 }
+
+@media screen and (max-width:720px) {
+    .contenedor__experiencia{
+        height: 360px;
+
+    }
+    
+}
