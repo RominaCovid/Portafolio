@@ -14,3 +14,10 @@
     text-decoration:underline;
     color:#2d3aaa;
 }
+@media screen and (max-width:720px) {
+    .inicio{
+        margin-left: 98%;
+    }
+
+
+}

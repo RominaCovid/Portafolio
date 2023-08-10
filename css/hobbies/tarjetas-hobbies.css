@@ -4,6 +4,9 @@
     margin:4.3rem;
     width:185px;
     height: 200px;   
-    border: double rgb(45, 146, 22);
+    border: solid rgb(45, 146, 22);
     border-radius: 5%;
+    box-shadow: 6px 10px 19px -3px rgba(0,0,0,0.5);
+-webkit-box-shadow: 6px 10px 19px -3px rgba(0,0,0,0.5);
+-moz-box-shadow: 6px 10px 19px -3px rgba(0,0,0,0.5);
 }

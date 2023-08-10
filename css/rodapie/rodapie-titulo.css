@@ -4,3 +4,10 @@
     font-weight: 400;
     font-size: 1.25rem;  
 }
+
+@media screen and (max-width:720px) {
+    .rodapie__titulo{
+        font-size: 0.90rem;
+    }
+    
+}

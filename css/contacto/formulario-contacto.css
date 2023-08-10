@@ -59,5 +59,8 @@ input:focus{
     .btn{
         width:9rem;
     }
+    input{
+        padding: 2px 0;
+    }
     
 }

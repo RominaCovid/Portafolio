@@ -3,7 +3,20 @@
     font-family: Dancing Script,cursive;
     color:#086A87;
     font-size: 1.8rem;
+    animation-duration: 3s;
+    animation-name: slidein;
 }
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 
 @media screen and (max-width:720px) {
     .presentacion__personal{
