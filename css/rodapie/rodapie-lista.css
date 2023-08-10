@@ -1,7 +1,3 @@
 .rodapie__lista{
     display: flex;
-    justify-content:center;
-    align-items: center;
-    justify-content: space-around;
-    padding-bottom: 2rem;
 }
